@@ -100,10 +100,10 @@ def matriz_confusao(k_viz):
         print mt[i]
 
 
-treino = open("../examples/training",'r')
+treino = open("./examples/training",'r')
 base_de_treino = [ i.strip() for i in treino ]
 
-teste = open("../examples/testing",'r')
+teste = open("./examples/testing",'r')
 base_de_teste = [ f.strip() for f in teste ]
 
 # Removendo a primeira linha, que contem apenas 2 colunas:
@@ -142,15 +142,5 @@ for i in range(len(base_candidata)):
 
 # Imprime matriz de confusao
 matriz_confusao(k_vizinhos)
-
-#    print "Classe: "+kv.classe_candidato,
-#    print "\nClasse dos vizinhos: "
-#    for i in range(len(kv.kv)):
-#       #result.write(kv.kv[i][1])
-#        print kv.kv[i][1],
-#    print
-#   #result.write("\n")
-#   #result.write(taxa_de_acerto(kv))
-#result.close()
 
 
